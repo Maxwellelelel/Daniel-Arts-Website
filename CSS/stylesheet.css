@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  color: rgb(241, 248, 255);
+  background-image: url("../Media/Images/Image1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Luna";
+  -webkit-text-stroke-color: black;
+}
+
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 30vw 0 5vw;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  cursor: default;
+}
+
+header h1 {
+  margin-top: -250px;
+  font-size: 48px;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: -40px;
+}
+
+header:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;  
+  content: "";
+  display: block;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+header * {
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.topnav {
+  position: fixed;
+  width: 99%;
+  top: 10px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.topnav a {
+  float: right;
+  padding-right: 35px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  color: rgb(123, 255, 211);
+  transition: 0.3s;
+}
+
+.topnav i {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.topnav i:hover {
+  color: rgb(123, 255, 211);
+  transition: 0.3s;
+}
+
+.content {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 2160px;
+  background-color: rgb(123, 255, 211);
+  color: rgb(255, 255, 255);
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 70px;
+}
+
+.content p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 260px;
+  margin-right: 260px;
+}
+
+.video-container {
+  border: 0px solid;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
