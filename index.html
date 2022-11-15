@@ -8,29 +8,22 @@
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         </head>
     <body>
-        <div>
-            <header id="header-id">
-                <div class="topnav" id="topnav-id">
-                    <ul>
-                        <li>
-                            <a onclick="toggleVideo()">Videoediting</a>
-                            <a onclick="changeBackground('Media/Social/LAYZR-banner.png')">Social Media</a>
-                            <a onclick="changeBackground('Media/Images/Image7.png')">Drawings</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="paravid" id="paravid-con">
-                    <video autoplay muted loop id="bg-vid">
-                      <source src="Media/Videos/TV_Teaser_Insta_New_Voice.mp4" type="video/mp4"/>
-                    </video>
-                  </div>
-                <div>
-                    <h1>Bon3s Arts</h1>
-                    <p>Graphics Designer // Managment Student // Professional Retard</p>
-                </div>
-            </header>
+        <div class="topnav" id="topnav-id">
+            <a onclick="changeSiteElements('ve')">Videoediting</a>
+            <a onclick="changeSiteElements('sm')">Social Media</a>
+            <a onclick="changeSiteElements('dr')">Drawings</a>
         </div>
-        <div class="content">
+        <div class="vidcon" id="vidcon-id">
+            <video autoplay muted loop id="bgvid-id">
+              <source src="Media/Videos/TV_Teaser_Insta_New_Voice.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        <div>
+        <div class="headcon" id="headcon-id">
+            <h1>Bon3s Arts</h1>
+            <p>Graphics Designer // Managment Student // Professional Retard</p>
+        </div>
+        <div class="content" id="content-id">
             <h1>Art created by Daniel aka "MrBon3s" Thurand</h1>
             <p>This is a placeholder text. Today I stood up brushed my teeth, made myself breakfast. In my freetime I like to play Videogames, do sports and do some programming. I am currently working on a Webdesign Portfolio.
                This is a placeholder text. Today I stood up brushed my teeth, made myself breakfast. In my freetime I like to play Videogames, do sports and do some programming. I am currently working on a Webdesign Portfolio.</p>
