@@ -5,7 +5,7 @@ html {
 
 body {
   color: rgb(241, 248, 255);
-  background-image: url("../Media/Images/Image1.png");
+  background-image: url("../Media/Images/Image7.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -130,7 +130,7 @@ ul, li {
 .video-container {
   border: 0px solid;
   border-radius: 48px;
-  overflow: hidden;
+  visibility: hidden;
 }
 
 #background-video {

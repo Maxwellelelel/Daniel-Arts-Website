@@ -8,19 +8,28 @@
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         </head>
     <body>
-        <header id="header-id">
-            <div class="topnav" id="topnav-id">
-                <ul>
-                    <li>
-                        <a onclick="changeBackground('Media/Images/Image3.png')">Videoediting</a>
-                        <a onclick="changeBackground('Media/Social/LAYZR-banner.png')">Social Media</a>
-                        <a onclick="changeBackground('Media/Images/Image1.png')">Drawings</a>
-                    </li>
-                </ul>
-            </div>
-            <h1>Bon3s Arts</h1>
-            <p>Graphics Designer // Managment Student // Professional Retard</p>
-        </header>
+        <div>
+            <header id="header-id">
+                <div class="video-container" id="video-container-id">
+                    <video autoplay muted loop id="background-video">
+                        <source src="Media/Videos/TV_Teaser_Insta_New_Voice.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="topnav" id="topnav-id">
+                    <ul>
+                        <li>
+                            <a onclick="toggleVideo()">Videoediting</a>
+                            <a onclick="changeBackground('Media/Social/LAYZR-banner.png')">Social Media</a>
+                            <a onclick="changeBackground('Media/Images/Image7.png')">Drawings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Bon3s Arts</h1>
+                    <p>Graphics Designer // Managment Student // Professional Retard</p>
+                </div>
+            </header>
+        </div>
         <div class="content">
             <h1>Art created by Daniel aka "MrBon3s" Thurand</h1>
             <p>This is a placeholder text. Today I stood up brushed my teeth, made myself breakfast. In my freetime I like to play Videogames, do sports and do some programming. I am currently working on a Webdesign Portfolio.

@@ -1,15 +1,18 @@
+var videoDiv = document.getElementById('video-container-id').style;
+var vid = document.getElementById('background-video');
+var bds = document.body.style;
+
 function changeBackground(mediaURL) {
-    var bds = document.body.style;
     var path = "url('" + mediaURL + "')";
-    //var video = document.getElementById('background-video');
 
-    if(mediaURL.includes(".png")) {
-        //video.pause();
-        bds.backgroundImage = path;
-        bds.transition = "0.8s";
+    videoDiv.visibility = "hidden"
+    vid.pause();
+    bds.backgroundImage = path;
+    bds.transition = "0.8s";
+}
 
-    } else {
-        bds.backgroundImage = "";
-        //video.play();
-    }
+function toggleVideo() {
+    videoDiv.visibility = "visible";
+    vid.play();
+    bds.backgroundImage = "none"
 }
