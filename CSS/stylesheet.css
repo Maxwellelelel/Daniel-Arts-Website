@@ -127,7 +127,24 @@ ul, li {
   margin-right: 260px;
 }
 
-.video-container {
+/* Video Parallax Section*/
+.paravid {
+  height: 100%;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.paravid video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/*.video-container {
   border: 0px solid;
   border-radius: 48px;
   visibility: hidden;
@@ -143,4 +160,4 @@ ul, li {
   top: 0;
   bottom: 0;
   z-index: -1;
-}
+}*/
